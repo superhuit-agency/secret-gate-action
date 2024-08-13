@@ -8,18 +8,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Secret gate no secrets set
         uses: ./ # for testing the action from this repository
         with:
           inputsToCheck: input1
           failOnMissing: true
-  
+
   continuing-job:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Secret gate no secrets set
         id: gateOne
         uses: ./ # for testing the action from this repository
