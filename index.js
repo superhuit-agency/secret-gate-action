@@ -1,4 +1,4 @@
-import core from '@actions/core';
+import * as core from '@actions/core';
 
 try {
   const inputsToCheck = core.getInput('inputsToCheck').split(',');
